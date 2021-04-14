@@ -1,0 +1,184 @@
+* {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  --darkest-blue: hsl(221, 93%, 16%);
+  --blue: #0069ff;
+}
+
+.wrapper {
+  max-width: 1000px;
+  padding: left 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Header  */
+
+header {
+  display: grid;
+  grid-auto-flow: column;
+
+  place-items: center;
+
+  position: sticky;
+  top: 0px;
+
+  background-color: white;
+
+  padding: 20px 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+header ul li {
+  display: inline;
+
+  padding: 0px 2px;
+}
+
+header li a {
+  color: var(--darkest-blue);
+}
+
+header li a:hover {
+  color: var(--blue);
+}
+
+header img {
+  width: 200px;
+}
+
+#sign-up {
+  text-decoration: none;
+
+  padding: 10px 15px;
+
+  font-weight: bold;
+
+  color: var(--blue);
+  background-color: white;
+
+  border: 1px solid var(--blue);
+  border-radius: 5px;
+
+  transition: 0.5s;
+}
+
+#sign-up:hover {
+  color: white;
+  background-color: var(--blue);
+}
+
+/* Hero section */
+
+.hero {
+  background-image: url(https://web.archive.org/web/20190619220330im_/https://www.digitalocean.com/assets/media/homepage/bg-home-1-d54581d7.jpg);
+}
+
+.hero .wrapper {
+  display: grid;
+  grid-template-columns: 6fr 5fr;
+
+  grid-gap: 15px;
+
+  padding: 4rem 0;
+}
+
+.hero .left h1 {
+  font-size: 3.5rem;
+  color: white;
+}
+
+.hero .left p {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.hero .wrapper .right {
+  background-color: white;
+
+  border-radius: 10px;
+
+  padding: 10px;
+
+  /* display: grid; */
+}
+
+.hero .right h2 {
+  text-align: center;
+  font-size: 1.75rem;
+  color: var(--darkest-blue);
+
+  padding-top: 2rem;
+}
+
+.hero .right h3 {
+  text-align: center;
+  font-size: 1.75rem;
+  color: var(--blue);
+}
+
+.hero .wrapper .right form {
+  display: grid;
+
+  grid-gap: 10px;
+}
+
+.hero .right form input {
+  padding: 20px;
+
+  border: 1px solid #f1f1f1;
+}
+
+.hero .right button {
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: none;
+}
+
+.hero .right .create-an-account {
+  color: white;
+  background-color: rgb(151, 151, 253);
+}
+
+.hero .right .google-button {
+  display: grid;
+  grid-template-columns: 20px 1fr 20px;
+
+  background-color: white;
+  box-shadow: 4px 2px 2px rgb(230, 229, 229);
+
+  color: rgb(77, 77, 77);
+}
+
+.hero .right button img {
+  width: 20px;
+}
+
+.hero .right form .t&cs p {
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+/* Companies section */
+
+.companies {
+  display: grid;
+  grid-auto-flow: row;
+
+  place-items: center;
+}
